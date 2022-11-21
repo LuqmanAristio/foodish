@@ -1,0 +1,238 @@
+@media screen and (max-width: 1200px) {
+    .barResponsive{
+        visibility: visible;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    nav-bar ul{
+        visibility: hidden;
+    }
+
+    .aboutUs{
+        flex-direction: column;
+    }
+
+    .leftInformation{
+        text-align: center;
+        width: 100%;
+    }
+
+    .leftInformation p{
+        padding-right: 0;
+    }
+
+    .rightImage{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .rightImage img{
+        min-width: 250px;
+    }
+
+    .foodCategories h1{
+        padding: 0px 20px;
+    }
+
+    .foodCategories p{
+        padding: 0px 20px;
+    }
+
+    .foodInformation{
+        flex-direction: column;
+    }
+
+    .leftImage{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .rightInformation{
+        width: 100%;
+        margin: 50px 40px 0px 0px;
+        height: auto;
+        align-items: center;
+    }
+
+    .rightInformation h1, h4{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .rightInformation h1{
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .infoFood{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .textInfo{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .textInfo p{
+        margin-top: 10px;
+    }
+
+    .textInfo h2{
+        margin-top: 5px;
+    }
+
+    food-list{
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    header-banner h1{
+        font-size: 3em;
+    }
+    header-banner p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    header-banner h1{
+        font-size: 3em;
+        text-align: center;
+    }
+
+    header-banner p{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .searchBanner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchBanner input[type=text]{
+        width: 80%;
+    }
+
+    .searchBanner button{
+        width: 85%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .categoryList{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    category-list{
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .categoryList{
+        margin-top: 0px;
+    }
+
+    .listSearchFood{
+        flex-direction: column;
+    }
+
+    food-list{
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    food-result{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px){
+    header-banner h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    header-banner{
+        margin-top: 10%;
+    }
+
+    .categoryList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    category-list{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    header-banner h1{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    header-banner p{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .searchBanner input[type=text]{
+        margin-top: 20px;
+    }
+
+    .searchFood input[type=text]{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 280px){
+    nav-bar h1{
+        font-size: 2em;
+    }
+
+    header-banner{
+        margin-top: 25%;
+    }
+
+    header-banner h1{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    header-banner p{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .searchBanner input[type=text]{
+        margin-top: 20px;
+    }
+
+    .leftInformation h3 a{
+        font-size: 1em;
+    }
+
+    .leftInformation p{
+        padding-right: 0px;
+    }
+
+    category-list p{
+        font-size: 3em;
+    }
+}

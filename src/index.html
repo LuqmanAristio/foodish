@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3f9b7615f.js" crossorigin="anonymous"></script>
+    <title>Foodish</title>
+</head>
+<body>
+    <header id="_home">
+        <nav-bar></nav-bar>
+        <header-banner></header-banner>
+        <dropdown-menu></dropdown-menu>
+    </header>
+    <main>
+
+        <section class="aboutUs" id="_about">
+            <div class="leftInformation">
+                <h1>About Us</h1>
+                <p>Foodish is a place for those of you who want to 
+                    find food references and recipes. There are various 
+                    types of food from various parts of the world that you can try. 
+                    Let's explore together
+                </p>
+                <h3><a href="" id="letsTry">Lets try !</a></h3>
+            </div>
+            <div class="rightImage">
+                <img src="image/foodList.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="foodCategories" id="_category">
+            <h1>Best Food Category</h1>
+            <p style="margin-bottom: 50px;">Here are some of the best food categories
+                you might be looking for.
+            </p>
+            <div class="categoryList"></div>
+        </section>
+
+        <section class="foodInformation" id="basicInfo">
+            <div class="leftImage"></div>
+            <div class="rightInformation">
+                <h4>Our Scope</h4>
+                <h1>Explore every food in the world here !</h1>
+
+                <div class="infoFood">
+                    <div class="ikonInfo">
+                        <i class="fa-solid fa-burger"></i>
+                    </div>
+                    <div class="textInfo">
+                        <h2>More than 10 Food Category</h2>
+                        <p>There are more than 10 categories of food available 
+                            and you can access it free. Lets try and find out new
+                            food now !</p>
+                    </div>
+                </div>
+
+                <div class="infoFood">
+                    <div class="ikonInfo">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <div class="textInfo">
+                        <h2>Complete Recipe and Ingridients</h2>
+                        <p>There are recipes and ingredients needed that you 
+                            can read and try at home. So everyone could try
+                            many kind of food easily </p>
+                    </div>
+                </div>
+
+                <div class="infoFood">
+                    <div class="ikonInfo">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="textInfo">
+                        <h2>25 Country Around the World</h2>
+                        <p>You can try to make food from various parts of the world here. 
+                            Suitable for those of you who want to try new flavors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="_search">
+            <h1>Search your favorite food here!</h1>
+            <p>There are more than five hundred meal that can you choose</p>
+            <input type="text" id="searchArea" placeholder="Example : Chicken">
+            <input type="submit" value="Search" id="submitSearch">
+        </section>
+        
+        <food-result></food-result>
+        
+    </main>
+</body>
+</html>

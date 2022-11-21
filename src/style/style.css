@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F8FAFB;
+}
+
+header{
+    width: 100%;
+    background-image: url(../image/bannerImage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    padding: 20px 0px;
+}
+
+.onScroll{
+    background-color: #23140D;
+}
+
+nav-bar h1{
+    color: white;
+    font-size: 2.5em;
+    margin-left: 50px;
+}
+
+nav-bar ul{
+    position: absolute;
+    right: 10em;
+}
+
+nav-bar ul li{
+    display: inline-block;
+    margin-left: 8vw;
+}
+
+nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.barResponsive{
+    color: white;
+    font-size: 1.8em;
+    background: transparent;
+    border: none;
+    visibility: hidden;
+}
+
+dropdown-menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+dropdown-menu.active{
+    opacity: 1;
+    left: 0;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+.leftMenu{
+    width: 70%;
+    height: 100%;
+    background-color: #23140D;
+    position: absolute;
+    z-index: 99;
+}
+
+.leftMenu i{
+    margin: 60px 60px;
+    font-size: 2em;
+    color: white;
+}
+
+.leftMenu ul{
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.leftMenu ul li{
+    list-style-type: none;
+    padding: 20px 0px;
+    border-top: 0.5px solid white;
+}
+
+.botMenu{
+    border-bottom: 0.5px solid white;
+}
+
+.leftMenu ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    padding: 0px 50px;
+}
+
+.leftMenu hr{
+    width: 100%;
+    margin-left: 0;
+}
+
+.rightMenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 80%;
+    z-index: 1;
+}
+
+header-banner{
+    width: 78%;
+    color: white;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header-banner h1{
+    font-size: 4.2em;
+}
+
+header-banner p{
+    font-size: 1.6em;
+}
+
+.searchBanner button{
+    width: 55%;
+    padding: 11px 10px 14px 10px;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    margin-top: 20px;
+}
+
+.searchBanner button:hover{
+    background-color: white;
+    color: #23140D;
+    transition: 0.5s ease;
+}
+
+.searchBanner ::placeholder{
+    color: white;
+}
+
+main{
+    width: 100%;
+    margin: 80px 0px;
+}
+
+.aboutUs{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.rightImage{
+    width: 50%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightImage img{
+    width: 90%;
+    min-width: 300px;
+}
+
+.leftInformation{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftInformation h1{
+    font-size: 3em;
+    color: #23140D;
+}
+
+.leftInformation p{
+    color: gray;
+    font-size: 1.2em;
+    margin: 50px 0px;
+    padding-right: 50px;
+}
+
+.leftInformation h3{
+    margin-top: 20px;
+}
+
+.leftInformation h3 a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #753422;
+    border: 2px solid #753422;
+    padding: 10px 70px;
+    transition: 0.5s ease;
+}
+
+.leftInformation h3 a:hover{
+    color: white;
+    background-color: #753422;
+    transition: 0.5s ease;
+}
+
+.foodCategories{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.foodCategories h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.foodCategories p{
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: gray;
+    text-align: center;
+}
+
+.categoryList{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+category-list{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 20px;
+}
+
+category-list h1{
+    font-size: 6em;
+    margin: 20px 0px;
+}
+
+category-list img{
+    width: 60%;
+}
+
+category-list p{
+    font-size: 1em;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
+
+.foodInformation{
+    width: 100%;
+    display: flex;
+    margin-top: 200px;
+    background-color: #F0ECE3;
+}
+
+.leftImage{
+    width: 50%;
+    background-image: url('../image/food.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.rightInformation{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 40px 40px 0px;
+}
+
+.rightInformation h1, h4{
+    margin-left: 80px;
+}
+
+.rightInformation h4{
+    font-size: 1.2em;
+    color: #753422;
+}
+
+.rightInformation h1{
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.rightInformation h2{
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+.infoFood{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    margin-left: 75px;
+}
+
+.ikonInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.ikonInfo i{
+    font-size: 3em;
+    color: #B05B3B;
+}
+
+.textInfo{
+    margin-left: 20px;
+}
+
+#_search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#_search h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+#_search p{
+    font-size: 1.2em;
+    color: gray;
+    text-align: center;
+    margin: 0px 15px;
+    margin-top: 10px;
+}
+
+#searchArea{
+    width: 80%;
+    margin-top: 40px;
+    padding: 20px 0px;
+    font-size: 1.5em;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#submitSearch{
+    width: 200px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #23140D;
+    color: #F0ECE3;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+food-result{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+food-list{
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+food-list h1{
+    font-size: 2em;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+food-list img{
+    width: 80%;
+    margin: 30px;
+}
+
+food-list p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+food-list h3{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+food-list h3 a{
+    padding: 10px 40px;
+    background-color: #4E6C50;
+    color: white;
+    cursor: pointer;
+    text-decoration : none;
+    border-radius: 5px;
+}
+
